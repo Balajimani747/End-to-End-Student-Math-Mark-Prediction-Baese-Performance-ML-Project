@@ -78,8 +78,8 @@ class  Data_Transformation:
             train_input_feature_df=train_df.drop(columns=target_column_name,axis=1)
             train_target_feature_df=train_df["math_score"]
 
-            test_input_feature_df=train_df.drop(columns=target_column_name,axis=1)
-            test_target_feature_df=train_df["math_score"]
+            test_input_feature_df=test_df.drop(columns=target_column_name,axis=1)
+            test_target_feature_df=test_df["math_score"]
 
             logging.info("slpiting train and test data is done")
 
